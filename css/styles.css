@@ -109,7 +109,7 @@ nav a:focus {
   max-width: 100%;
   padding: 2rem;
   margin: 0 auto;
-  box-sizing: border-box;
+/*   box-sizing: border-box; */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
