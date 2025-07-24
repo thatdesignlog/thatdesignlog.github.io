@@ -121,6 +121,11 @@ nav a:focus {
   max-width: 100%;
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+}
+
 .projects {
   width: 100%;
 }
