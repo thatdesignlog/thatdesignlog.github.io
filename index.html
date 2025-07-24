@@ -1,80 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>thisisinit</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <nav>
-    <a class="logo" href="index.html" aria-label="Homepage">thisisinit</a>
-    <div class="right">
-      <a href="about.html">about</a>
-      <div
-        class="toggle-theme-wrapper"
-        role="button"
-        tabindex="0"
-        aria-label="Toggle light and dark theme"
-        onclick="toggleTheme()"
-        onkeydown="if(event.key==='Enter' || event.key===' ') toggleTheme()"
-      >
-        <svg id="sun-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path
-            d="M6.76 4.84l-1.8-1.79-1.42 1.41 1.79 1.8 1.43-1.42zM1 13h3v-2H1v2zm10-9h2V1h-2v3zm7.66 2.46l1.79-1.8-1.41-1.41-1.8 1.79 1.42 1.42zM17 11v2h3v-2h-3zm-5 3a4 4 0 100-8 4 4 0 000 8zm4.24 2.76l1.8 1.79 1.41-1.41-1.79-1.8-1.42 1.42zM13 23h-2v-3h2v3zm-7.66-4.46l-1.79 1.8 1.41 1.41 1.8-1.79-1.42-1.42z"
-          />
-        </svg>
-        <svg id="moon-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M9.37 5.51A7 7 0 0016.49 16a9 9 0 01-7.12-10.49z" />
-        </svg>
-        <div class="toggle-theme-button"></div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>thatdesignlog</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header inside container -->
+    <div class="container">
+      <nav>
+        <a class="logo" href="index.html">thisisinit</a>
+        <div class="right">
+          <a href="about.html">about</a>
+          <div
+            class="toggle-theme-wrapper"
+            role="button"
+            tabindex="0"
+            aria-label="Toggle light and dark theme"
+            onclick="toggleTheme()"
+            onkeydown="if(event.key==='Enter' || event.key===' ') toggleTheme()"
+          >
+            <svg id="sun-icon" viewBox="0 0 24 24">
+              <path
+                d="M6.76 4.84l-1.8-1.79-1.42 1.41 1.79 1.8 1.43-1.42zM1 13h3v-2H1v2zm10-9h2V1h-2v3zm7.66 2.46l1.79-1.8-1.41-1.41-1.8 1.79 1.42 1.42zM17 11v2h3v-2h-3zm-5 3a4 4 0 100-8 4 4 0 000 8zm4.24 2.76l1.8 1.79 1.41-1.41-1.79-1.8-1.42 1.42zM13 23h-2v-3h2v3zm-7.66-4.46l-1.79 1.8 1.41 1.41 1.8-1.79-1.42-1.42z"
+              />
+            </svg>
+            <svg id="moon-icon" viewBox="0 0 24 24">
+              <path d="M9.37 5.51A7 7 0 0016.49 16a9 9 0 01-7.12-10.49z" />
+            </svg>
+            <div class="toggle-theme-button"></div>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
 
-  <main class="content" role="main">
-    <section class="intro" aria-label="Introduction">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.
-      </p>
-    </section>
+    <!-- Main content -->
+    <main class="content" role="main">
+      <section class="intro" aria-label="Site intro">
+        <p>Welcome to the site.</p>
+      </section>
 
-    <section class="projects" aria-label="Projects I'm working on">
-      <h2>I'm working on..</h2>
       <ul>
         <li>
           <div class="info">
             <span class="date">2025 06</span>
-            <a href="#" target="_blank" rel="noopener noreferrer">Creative App</a>
+            <a href="projects/creative-app.html">Creative App</a>
           </div>
           <div class="tags">#creative #mobile</div>
         </li>
-        <li>
-          <div class="info">
-            <span class="date">2025 05</span>
-            <a href="#" target="_blank" rel="noopener noreferrer">Portfolio Builder</a>
-          </div>
-          <div class="tags">#portfolio #web</div>
-        </li>
-        <li>
-          <div class="info">
-            <span class="date">2025 04</span>
-            <a href="#" target="_blank" rel="noopener noreferrer">Generative Blog</a>
-          </div>
-          <div class="tags">#ai #writing</div>
-        </li>
-        <li>
-          <div class="info">
-            <span class="date">2025 03</span>
-            <a href="#" target="_blank" rel="noopener noreferrer">AR Filter Set</a>
-          </div>
-          <div class="tags">#ar #design</div>
-        </li>
+        <!-- More projects... -->
       </ul>
-    </section>
-  </main>
+    </main>
 
-  <script src="js/theme.js"></script>
-</body>
+    <script src="js/theme.js"></script>
+  </body>
 </html>
