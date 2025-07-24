@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - thisisinit</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav>
+    <a class="logo" href="index.html" aria-label="Homepage">thisisinit</a>
+    <div class="right">
+      <a href="about.html" aria-current="page" aria-disabled="true" style="opacity: 0.6; cursor: default;">about</a>
+      <div
+        class="toggle-theme-wrapper"
+        role="button"
+        tabindex="0"
+        aria-label="Toggle light and dark theme"
+        onclick="toggleTheme()"
+        onkeydown="if(event.key==='Enter' || event.key===' ') toggleTheme()"
+      >
+        <svg id="sun-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M6.76 4.84l-1.8-1.79-1.42 1.41 1.79 1.8 1.43-1.42zM1 13h3v-2H1v2zm10-9h2V1h-2v3zm7.66 2.46l1.79-1.8-1.41-1.41-1.8 1.79 1.42 1.42zM17 11v2h3v-2h-3zm-5 3a4 4 0 100-8 4 4 0 000 8zm4.24 2.76l1.8 1.79 1.41-1.41-1.79-1.8-1.42 1.42zM13 23h-2v-3h2v3zm-7.66-4.46l-1.79 1.8 1.41 1.41 1.8-1.79-1.42-1.42z"
+          />
+        </svg>
+        <svg id="moon-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9.37 5.51A7 7 0 0016.49 16a9 9 0 01-7.12-10.49z" />
+        </svg>
+        <div class="toggle-theme-button"></div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content" role="main">
+    <section class="intro" aria-label="About thisisinit">
+      <h1>About thisisinit</h1>
+      <p>
+        Welcome to <strong>thisisinit</strong>, a personal blog and project showcase platform.
+        Here you’ll find my latest creative work, experiments, and thoughts on technology,
+        design, and innovation.
+      </p>
+      <p>
+        I focus on building responsive, accessible, and maintainable web experiences
+        that adapt seamlessly across devices.
+      </p>
+      <p>
+        Feel free to explore my projects on the <a href="index.html">home page</a>, and reach out if
+        you'd like to connect!
+      </p>
+    </section>
+  </main>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
