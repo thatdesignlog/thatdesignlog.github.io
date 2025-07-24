@@ -29,13 +29,6 @@ body {
   flex-direction: column;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-
 nav {
   display: flex;
   justify-content: space-between;
