@@ -1,9 +1,112 @@
-<!-- testing some ideas here. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MacBook Style Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
 
+    body {
+      background: #1c1c1e;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-let's put a computeresque work: 
-- home icon to go back to 'thatdesignlog'
-- music icon to open up music plater
-- book icon to open up library
-- folders fill out trinkets (things i like)
-- game icon to open a game player -->
+    /* Top Menu Bar */
+    .menu-bar {
+      height: 24px;
+      background: rgba(30, 30, 30, 0.9);
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      font-size: 14px;
+      -webkit-user-select: none;
+    }
+
+    .menu-bar img.logo {
+      height: 14px;
+      margin-right: 10px;
+    }
+
+    .menu-bar span {
+      margin-right: 15px;
+      cursor: default;
+    }
+
+    /* Macbook Window */
+    .mac-window {
+      margin: auto;
+      width: 80%;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      color: black;
+    }
+
+    .window-topbar {
+      height: 30px;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    .window-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .window-button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .red { background: #ff605c; }
+    .yellow { background: #ffbd44; }
+    .green { background: #00ca4e; }
+
+    .window-content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mac Menu Bar -->
+  <div class="menu-bar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo" class="logo" />
+    <span>File</span>
+    <span>Edit</span>
+    <span>View</span>
+    <span>Window</span>
+    <span>Help</span>
+  </div>
+
+  <!-- MacBook Screen -->
+  <div class="mac-window">
+    <div class="window-topbar">
+      <div class="window-buttons">
+        <div class="window-button red"></div>
+        <div class="window-button yellow"></div>
+        <div class="window-button green"></div>
+      </div>
+    </div>
+    <div class="window-content">
+      <h1>Welcome to the MacBook Page</h1>
+      <p>This is a simulated Mac-style screen layout made with HTML and CSS.</p>
+    </div>
+  </div>
+
+</body>
+</html>
