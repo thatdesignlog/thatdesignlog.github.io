@@ -176,7 +176,7 @@ footer {
   outline: none;
 }
 
-.projects li .info .date {
+.projects li .info .number {
   font-weight: 400;
   color: gray;
   white-space: nowrap;
